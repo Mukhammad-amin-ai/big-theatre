@@ -10,9 +10,8 @@ span {
     color: #D1A954;
 }
 
-.buttons{
+.buttons {
     display: none;
-    /* width: 100%; */
 }
 
 
@@ -22,7 +21,8 @@ span {
     width: 100%;
     height: 100vh;
     background: url('/Img/Rectangle\ 1.png');
-
+    background-size: cover;
+    background-attachment: scroll;
 }
 
 .container .nav {
@@ -222,19 +222,20 @@ span {
 
 .container .main_head .main_right .main_right_top {
     width: 70%;
-    height: 90%;
+    height: 75%;
 
 }
+
 .container .main_head .main_right .main_right_top img {
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
 .container .main_head .main_right .main_right_bottom {
-    width: 100%;
+    width: 50%;
     height: 10%;
     display: flex;
-    gap: 50%;
+    gap: 70%;
 }
 
 .container .main_head .main_right .main_right_bottom i {
@@ -567,6 +568,7 @@ span {
 }
 
 .container .footer .end {
+    background-color: #333333;
     width: 100%;
     height: 30%;
     display: flex;
