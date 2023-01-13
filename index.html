@@ -8,7 +8,7 @@
     <title>//Theatre//</title>
     <link rel="stylesheet" href="./Style/main.css">
     <link rel="stylesheet" href="./Style/fonts.css">
-
+    <link rel="stylesheet" href="/Responsivity/main.css">
 </head>
 
 <body>
@@ -39,6 +39,43 @@
                 </button>
             </div>
 
+            <div class="buttons hidden flex">
+                    <button class="button1" id="click">
+                    <i class='bx bx-menu-alt-left' ></i>
+                    </button>
+                <div class="button_left" id="list">
+                    <div class="menu sidebar">
+                        
+                        <i class='bx bx-x' id="click2" ></i>
+
+                        <ul>
+                            <li> <a href="#"> Главная </a>
+                            </li>
+                            <li> <a href="#">о театре</a> </li>
+                            <li> <a href="#">Наши постановки</a> </li>
+                            <li> <a href="#">партнеры театра</a> </li>
+                            <li> <a href="#">контакты</a> </li>
+                        </ul>
+                        <div class="sidebar_sec_icons">
+                            <div class="sidebar_left_icons">
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                            <div class="sidebar_right_icons">
+                                <a href="#"><i class='bx bxl-vk'></i></a>
+                                <a href="#"><i class='bx bxl-youtube'></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button_right">
+                    <button class="num">
+                        <a href="#"> +7 495 123-45-67 </a>
+                    </button>
+                </div>
+            </div>
+
         </div>
 
         <div class="main_head">
@@ -51,7 +88,7 @@
             </div>
             <div class="main_right">
                 <div class="main_right_top">
-
+                    <img src="/Img/image 1.png" alt="">
                 </div>
                 <div class=" main_right_bottom">
                     <div class="main_right_bottom_left">
@@ -163,10 +200,10 @@
                 </div>
                 <div class="forms">
                     <form>
-                    <input type="text" id="fname" name="fname" placeholder="Имя">
-                    <input type="text" id="lname" name="lname" placeholder=" Компания">
-                    <input type="text" id="lname" name="lname" placeholder="Телефон ">
-                    <input type="text" id="lname" name="lname" placeholder=" E-mail">
+                        <input type="text" id="fname" name="fname" placeholder="Имя">
+                        <input type="text" id="lname" name="lname" placeholder=" Компания">
+                        <input type="text" id="lname" name="lname" placeholder="Телефон ">
+                        <input type="text" id="lname" name="lname" placeholder=" E-mail">
                     </form>
                     <p>* Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы
                         гарантируем, и защищаем персональные данные согласно законку ФЗ-52.</p>
@@ -174,15 +211,33 @@
                 <div class="form_button">
                     <input type="text" id="lname" name="lname" placeholder=" Сообщение ">
                     <button> отправить</button>
-                </div> 
-                
-            </div> <hr>
+                </div>
+
+            </div>
+            <hr>
             <div class="end">
-            <h6> (с) Все права защищены. Большой театр. 2020</h6>
-            <h6> by:Akhmadov Mukhammadamin</h6>
-        </div>
+                <h6> (с) Все права защищены. Большой театр. 2023</h6>
+                <h6> by:Akhmadov Mukhammadamin</h6>
+            </div>
         </div>
     </div>
+
+    <script>
+
+        let click =document.querySelector("#click");
+        let list =document.querySelector("#list");
+        let click2 =document.querySelector("#click2");
+
+        click.addEventListener("click",()=>{
+            list.classList.toggle('button_left');
+            list.classList.remove('menu');
+        });
+
+        click2.addEventListener("click",()=>{
+            list.classList.toggle('menu');
+        });
+
+    </script>
 </body>
 
 </html>
