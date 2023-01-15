@@ -90,12 +90,12 @@
     }
 
     .container .main_head .main_right .main_right_top img {
-        width: 75%;
+        width: 100%;
     }
 
     .container .main_head .main_right .main_right_bottom {
         height: 5%;
-        gap: 20%;
+        gap: 70%;
 
     }
 
@@ -439,107 +439,132 @@
 
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:570px) {
+    .container .card {
+        height: 80%;
+    }
+
+    .container .footer_bot {
+        display: none !important;
+    }
+
+    .container .partners .partners_bot .box:nth-child(3) {
+        display: none !important;
+    }
+
+    .container .partners .partners_bot .box:nth-child(4) {
+        display: none !important;
+    }
+
+    .container .footer .flexed {
+        display: block;
+    }
+
+    .container .footer .centerd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
+    .container .footer .footer_button {
+        width: 200px;
+        height: 50px;
+        background-color: #D1A954;
+        border-radius: 20px;
+    }
+
+    .container .footer .footer_button a {
+        color: #FFFFFF;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .container .footer .end {
+        gap: 30%;
+    }
+}
+
+@media screen and (min-width:320px) {
     .container .card {
         height: 100%;
     }
 
     .container .card .card_body {
-        width: 70%;
-        flex-direction: column;
-
+        height: 500px;
     }
 
+    .container .card .card_theme {
+        font-size: 28px;
+
+    }
     .container .card .card_body .card_text_one h3 {
-        text-align: center;
-        padding-left: 120px;
-    }
-
-    .container .card .card_body .card_text_one p {
-        text-align: center;
-        font-size: 10px;
-        padding-left: 120px;
+    font-size: 17px;
 
     }
+.container .card .card_body .card_text_one p {
+    font-size: 10px;
 
-    .container .card .card_body .card_text_two {
-        width: 80%;
-        padding-left: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+}
+    .container .pagination {
+        height: 100%;
     }
 
-    .container .partners .partners_bot .box:nth-child(1) {
-        display: none;
+    .container .pagination .pagination_theme {
+        font-size: 28px;
+        line-height: 45px;
+
     }
 
-    .container .partners .partners_bot .box:nth-child(2) {
-        display: none;
+    .container .footer_bot {
+        display: none !important;
     }
 
     .container .partners .partners_bot .box:nth-child(3) {
-        display: none;
+        display: none !important;
     }
 
     .container .partners .partners_bot .box:nth-child(4) {
-        display: none;
+        display: none !important;
     }
 
-    .container .footer {
-        height: 100%;
+    .container .footer .flexed {
+        display: block;
     }
 
-    .container .footer .footer_bot {
-        height: 100%;
-        background-color: #333333;
-        position: relative;
+    .container .footer .centerd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
     }
 
-    .container .footer .footer_bot .info {
-        position: absolute;
-        bottom: -90px;
-        left: 20px;
-        flex-direction: column-reverse;
-        height: 40%;
-        width: 90%;
-    }
-
-    .container .footer .footer_bot .info h3:nth-child(1) {
-        position: absolute;
-        bottom: 70px;
-        right: 0;
-    }
-
-    .container .footer .footer_bot .info h3:nth-child(2) {
-        position: absolute;
-        bottom: 120px;
-        right: 0;
-    }
-
-    .container .footer .footer_bot .forms p {
-        position: absolute;
-        bottom: -180px;
+    .container .footer .footer_button {
         width: 200px;
-        left: 0;
+        height: 50px;
+        background-color: #D1A954;
+        border-radius: 20px;
     }
 
-    .container .footer .footer_bot .forms {
-        position: absolute;
-        bottom: 120px;
-        left: 200px;
+    .container .footer .footer_button a {
+        color: #FFFFFF;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
     }
 
-    .container .footer .footer_bot .form_button {
-        position: absolute;
-        bottom: -80px;
-        left: 120px;
+    .container .footer .end {
+        gap: 5%;
+        
     }
 
-    .container .footer .footer_bot .form_button button {
-        position: absolute;
-        bottom: 150px;
-        left: 90px;
+    .container .footer .footer_theme {
+        font-size: 28px;
+
     }
 }
