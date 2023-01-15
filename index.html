@@ -40,13 +40,13 @@
             </div>
 
             <div class="buttons hidden flex">
-                    <button class="button1" id="click">
-                    <i class='bx bx-menu-alt-left' ></i>
-                    </button>
+                <button class="button1" id="click">
+                    <i class='bx bx-menu-alt-left'></i>
+                </button>
                 <div class="button_left" id="list">
                     <div class="menu sidebar">
-                        
-                        <i class='bx bx-x' id="click2" ></i>
+
+                        <i class='bx bx-x' id="click2"></i>
 
                         <ul>
                             <li> <a href="#"> Главная </a>
@@ -227,16 +227,16 @@
 
     <script>
 
-        let click =document.querySelector("#click");
-        let list =document.querySelector("#list");
-        let click2 =document.querySelector("#click2");
+        let click = document.querySelector("#click");
+        let list = document.querySelector("#list");
+        let click2 = document.querySelector("#click2");
 
-        click.addEventListener("click",()=>{
+        click.addEventListener("click", () => {
             list.classList.toggle('button_left');
             list.classList.remove('menu');
         });
 
-        click2.addEventListener("click",()=>{
+        click2.addEventListener("click", () => {
             list.classList.toggle('menu');
         });
 

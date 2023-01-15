@@ -501,14 +501,17 @@
         font-size: 28px;
 
     }
+
     .container .card .card_body .card_text_one h3 {
-    font-size: 17px;
+        font-size: 17px;
 
     }
-.container .card .card_body .card_text_one p {
-    font-size: 10px;
 
-}
+    .container .card .card_body .card_text_one p {
+        font-size: 10px;
+
+    }
+
     .container .pagination {
         height: 100%;
     }
@@ -560,7 +563,7 @@
 
     .container .footer .end {
         gap: 5%;
-        
+
     }
 
     .container .footer .footer_theme {
